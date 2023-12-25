@@ -3,7 +3,7 @@ import React from 'react'
 const Nav = () => {
   return (
     <>
-    <div className="shadow flex justify-center gap-56 h-20 items-center">
+    <div className="shadow-md flex justify-center gap-56 h-20 items-center bg-slate-50 sticky top-0 left-0 overflow-hidden">
       
       <div className="flex items-center">
       <img src="./Swiggy.webp" alt="" className='mix-blend-multiply w-24 mr-8' />

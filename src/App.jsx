@@ -1,6 +1,7 @@
 
 import Nav from './components/Nav'
 import Offers from './components/Offers'
+import Cards from './components/Cards'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
     <Nav/>
     <Offers/>
+    <Cards />
     </>
   )
 }
