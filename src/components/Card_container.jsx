@@ -4,8 +4,12 @@ import resList from '../utils/cardData'
 
 const Card_container = () => {
   return (
-    <div>
-      <Cards resData = {resList}/>
+    <div className='flex flex-wrap'>
+      {
+        resList.map((restraunt)=>(
+          <Cards key={restraunt.data.id} resData = {restraunt} />
+        ))
+      }
     </div>
   )
 }
