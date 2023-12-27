@@ -1,7 +1,7 @@
 
 import Nav from './components/Nav'
 import Offers from './components/Offers'
-import Cards from './components/Cards'
+import Card_container from './components/Card_container'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <>
     <Nav/>
     <Offers/>
-    <Cards />
+    <Card_container />
     </>
   )
 }
