@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Nav/>
-    <Offers/>
+    {/* <Offers/> */}
     <Card_container />
     </>
   )
