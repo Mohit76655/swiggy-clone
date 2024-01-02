@@ -5,6 +5,7 @@ import resList from '../utils/cardData'
 const Card_container = () => {
   const [listOfRestraunt, setlistOfRestraunt] = useState(resList);
   const [SearchText, setSearchText] = useState("")
+  const [filteredRes, setfilteredRes] = useState(resList)
 
   useEffect(() =>{
     fetchData();
@@ -30,13 +31,13 @@ const Card_container = () => {
           setSearchText(e.target.value)
         }} />
         <button className=' bg-sky-500 p-1 w-20 rounded-lg text-white hover:bg-green-500' onClick={()=>{
-          const filterRes = listOfRestraunt.filter((resList) => resList.data.name.includes(SearchText));
+          const filterRes = listOfRestraunt.filter((resList) => resList.data.name.toLowerCase().includes(SearchText.toLowerCase()));
 
-          setlistOfRestraunt(filterRes)
+          setfilteredRes(filterRes)
         }}>Search</button>
       </div>
       {
-        listOfRestraunt.map((restraunt)=>(
+        filteredRes.map((restraunt)=>(
           <Cards key={restraunt.data.id} resData = {restraunt} />
         ))
       }
