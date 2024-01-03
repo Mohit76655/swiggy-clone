@@ -12,7 +12,7 @@ const Card_container = () => {
   },[]);
 
   const fetchData = async () =>{
-    const data = await fetch("https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=26.9124336&lng=75.7872709&carousel=true&third_party_vendor=1");
+    const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6126255&lng=77.04108959999999&page_type=DESKTOP_WEB_LISTING");
 
     const json = await data.json();
     console.log(json);
